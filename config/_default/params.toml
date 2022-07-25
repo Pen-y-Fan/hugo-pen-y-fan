@@ -1,0 +1,32 @@
+# see https://github.com/jpanther/congo/blob/dev/config/_default/params.toml
+#
+# Refer to the theme docs for more details about each of these parameters.
+# https://jpanther.github.io/congo/docs/configuration/#theme-parameters
+
+robots = "all"
+
+colorScheme = 'ocean'
+autoSwitchAppearance = 'true'
+enableSearch = 'true'
+enableCodeCopy = 'true'
+logo = 'img/logo.jpg'
+
+mainSections = ["2020","posts"]
+
+[header]
+layout = "basic" # valid options: basic, hamburger, custom
+
+[footer]
+showAppearanceSwitcher = 'true'
+
+[homepage]
+layout = "profile"
+showRecent = 'true'
+
+[article]
+showTableOfContents = 'true'
+sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
+
+[list]
+showSummary = 'true'
+showTableOfContents = 'true'

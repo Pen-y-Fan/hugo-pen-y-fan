@@ -35,6 +35,12 @@ submodule, it will need to be initialised before first run.
 git submodule update --init
 ```
 
+Or to update the theme
+
+```shell
+git submodule update --remote --merge
+```
+
 ## Commands
 
 Basic commands

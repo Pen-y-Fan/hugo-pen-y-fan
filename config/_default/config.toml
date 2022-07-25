@@ -1,0 +1,5 @@
+# see https://github.com/jpanther/congo/blob/dev/config/_default/config.toml
+baseURL = 'https://pen-y-fan.github.io/'
+languageCode = 'en'
+enableRobotsTXT = true
+paginate = 15

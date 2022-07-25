@@ -1,0 +1,16 @@
+# config/_default/languages.en.toml
+# see https://github.com/jpanther/congo/blob/dev/config/_default/languages.en.toml
+title = "Pen-y-Fan"
+dateFormat = '2nd January 2006'
+copyright = ":copyright: Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+[author]
+name = "Michael Pritchard (AKA Pen-y-Fan)"
+image = "img/author.jpg"
+headline = "Posts about my coding experiences."
+bio = "Posts about my coding experiences, primarily for my learning path with PHP, good clean professional code."
+links = [
+    { github = 'https://github.com/Pen-y-Fan' },
+    { linkedin = 'https://www.linkedin.com/in/michael-pritchard-340b4520/' },
+    { reddit = 'https://www.reddit.com/user/Pen-y-Fan' },
+    { twitter = "https://twitter.com/MikeAPritch" },
+]

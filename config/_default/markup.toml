@@ -1,0 +1,14 @@
+# -- Markup --
+# These settings are required for the theme to function.
+# see https://github.com/jpanther/congo/blob/dev/config/_default/markup.toml
+
+[goldmark]
+[goldmark.renderer]
+  unsafe = true
+
+[highlight]
+  noClasses = false
+
+[tableOfContents]
+  startLevel = 2
+  endLevel = 4

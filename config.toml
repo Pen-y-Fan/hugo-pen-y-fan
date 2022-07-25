@@ -1,4 +1,4 @@
 theme = 'congo'
 baseURL = 'https://pen-y-fan.github.io/'
-languageCode = 'en-gb'
+languageCode = 'en'
 title = 'Pen-y-Fan Hugo Site'

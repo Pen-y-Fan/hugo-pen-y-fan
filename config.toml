@@ -2,3 +2,6 @@ theme = 'congo'
 baseURL = 'https://pen-y-fan.github.io/'
 languageCode = 'en'
 title = 'Pen-y-Fan Hugo Site'
+
+[params]
+favicon = "/favicon.ico"

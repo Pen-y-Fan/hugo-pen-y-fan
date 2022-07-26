@@ -2,18 +2,13 @@
 # see https://github.com/jpanther/congo/blob/dev/config/_default/menus.en.toml
 
 [[main]]
-name = "2020"
-pageRef = "2020"
-weight = 8
-
-[[main]]
 name = "Blog"
 pageRef = "posts"
 weight = 10
 
 [[main]]
-name = "Categories"
-pageRef = "categories"
+name = "Tags"
+pageRef = "tags"
 weight = 20
 
 [[main]]

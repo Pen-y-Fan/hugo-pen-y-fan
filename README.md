@@ -47,12 +47,15 @@ Basic commands
 
 ### Create a post
 
-To create a new post **My second post** in the **posts** directory. Note the kebab case (url friendly) for the markdown
+To create a new post **My post** in the **posts/2022** directory. Note the kebab case (url friendly) for the markdown
 file name.
 
 ```shell
-hugo new posts/my-second-post.md
+hugo new posts/2022/my-post/index.md
 ```
+
+Open content > 2022 > my-post to see index.md, the `url: "/2022/My Post"` will need to be slugify `url: "/2022/my-post"`
+.
 
 ### Server
 
@@ -78,3 +81,9 @@ hugo -D
 ## License
 
 MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+## todo
+
+- <https://www.webfx.com/tools/emoji-cheat-sheet/>
+- disablePathToLower = true
+    - <https://gohugo.io/getting-started/configuration/#disablepathtolower> 

@@ -7,11 +7,10 @@ robots = "all"
 
 colorScheme = 'ocean'
 autoSwitchAppearance = 'true'
-enableSearch = 'true'
 enableCodeCopy = 'true'
 logo = 'img/logo.jpg'
 
-mainSections = ["2020","posts"]
+mainSections = "posts"
 
 [header]
 layout = "basic" # valid options: basic, hamburger, custom

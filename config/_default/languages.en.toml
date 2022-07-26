@@ -1,7 +1,7 @@
 # config/_default/languages.en.toml
 # see https://github.com/jpanther/congo/blob/dev/config/_default/languages.en.toml
 title = "Pen-y-Fan"
-dateFormat = '2nd January 2006'
+dateFormat = '2 January 2006'
 copyright = ":copyright: Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
 [author]
 name = "Michael Pritchard (AKA Pen-y-Fan)"

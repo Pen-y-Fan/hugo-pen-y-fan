@@ -78,12 +78,8 @@ Once the new content has been checked, you are ready to deploy
 hugo -D
 ```
 
+The **public** folder is configured as a git submodule, open in PhpStorm, commit and push the changes 😀
+
 ## License
 
 MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## todo
-
-- <https://www.webfx.com/tools/emoji-cheat-sheet/>
-- disablePathToLower = true
-    - <https://gohugo.io/getting-started/configuration/#disablepathtolower> 

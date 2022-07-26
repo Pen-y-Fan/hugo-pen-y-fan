@@ -57,11 +57,11 @@ Hugo has markdown and other options as standard
 
 ### Code syntax highlighting
 
-Yep, although U don't think as good as the theme used in Hexo, it is acceptable.
+Yep, although I don't think as good as the theme used in Hexo, it is acceptable.
 
 ### Easy to compile
 
-Hugo has three easy to follow cli commands, new, serve and build.
+Hugo has three easy to follow CLI commands for, new, serve and build.
 
 This command will create a new post with a title of "My first post"
 

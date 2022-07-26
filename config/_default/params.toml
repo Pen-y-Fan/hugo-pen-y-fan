@@ -8,7 +8,7 @@ robots = "all"
 colorScheme = 'ocean'
 autoSwitchAppearance = 'true'
 enableCodeCopy = 'true'
-logo = 'img/logo.jpg'
+logo = 'img/logo-100x100.jpg'
 
 mainSections = "posts"
 

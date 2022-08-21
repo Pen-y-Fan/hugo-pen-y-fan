@@ -3,6 +3,7 @@ title: "How to Install NGINX Unit on WSL 2 (Ubuntu)"
 date: 2022-07-26T22:13:24+01:00
 draft: false
 url: '2022/07/26/how-to-install-nginx-unit-on-wsl-2-ubuntu'
+tags: [NGINX unit, WSL2]
 summary: 'I wanted to experiment with NGINX unit as it offers the ability to specify the runtime for the project, this
 will be particularly useful when some projects are PHP 7.4, some PHP 8.0 and others PHP 8.1. This guide explains how to
 install NGINX unit on Windows WSL 2'

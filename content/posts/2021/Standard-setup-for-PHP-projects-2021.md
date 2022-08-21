@@ -1,7 +1,7 @@
 ---
 title: Standard setup for PHP projects 2021
 date: 2021-05-23 08:52:27
-tags: [Composer, Docker, Easy Coding Standard (ECS), PHP, PHPStan, PhpStorm, PHPUnit, Silverstripe, Xdebug, Standard Setup]
+tags: [Composer, Docker, Easy Coding Standard (ECS), PHP, PHPStan, PhpStorm, PHPUnit, Silverstripe CMS, Xdebug, Standard Setup]
 url: /2021/05/23/Standard-setup-for-PHP-projects-2021/
 summary: 'The focus of this blog is to help set up PHP Projects in PhpStorm. I have also included snippets from my
 side-projects. I hope the information will be useful for other PHP projects. This is a follow-up to my blog Standard

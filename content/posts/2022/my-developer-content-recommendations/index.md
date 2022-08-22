@@ -3,7 +3,7 @@ title: "My developer content recommendations"
 date: 2022-08-21T19:18:05+01:00
 tags: ['PHP', 'Resource']
 draft: false
-url: 2022/mm/dd/my-developer-content-recommendations
+url: 2022/08/21/my-developer-content-recommendations
 summary: "This is my curated and opinionated list on how I try to keep up to date with what's
 going on in software development and in particular PHP."
 ---

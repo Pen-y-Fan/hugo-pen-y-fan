@@ -4,5 +4,5 @@
 	branch = stable
 [submodule "public"]
 	path = public
-	url = https://github.com/Pen-y-Fan/Pen-y-Fan.github.io.git
+	url = git@github.com:Pen-y-Fan/Pen-y-Fan.github.io.git
 	branch = master

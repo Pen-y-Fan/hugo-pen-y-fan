@@ -1,6 +1,6 @@
 # Hugo for Pen-y-Fan site
 
-Investigate [Hugo](https://gohugo.io/getting-started/quick-start/) static site generator, as a possible replacement
+[Hugo](https://gohugo.io/getting-started/quick-start/) static site generator 
 for [hexo-pen-y-fan](https://github.com/Pen-y-Fan/hexo-pen-y-fan)
 
 ## Installation
@@ -22,7 +22,10 @@ local copy of this project on your computer.
 e.g.
 
 ```sh
-clone git@github.com:Pen-y-Fan/hugo-pen-y-fan.git
+git clone git@github.com:Pen-y-Fan/hugo-pen-y-fan.git
+```
+
+```sh
 cd hugo-pen-y-fan
 ```
 
@@ -47,15 +50,16 @@ Basic commands
 
 ### Create a post
 
-To create a new post **My post** in the **posts/2022** directory. Note the kebab case (url friendly) for the markdown
-file name.
+To create a new post **My post** in the **content/posts/2022** directory. Note the kebab case (url friendly) for the 
+markdown file name.
 
 ```shell
 hugo new posts/2022/my-post/index.md
+hugo new posts/2022/how-to-setup-and-configure-git-for-use-with-github/index.md
 ```
 
-Open content > 2022 > my-post to see index.md, the `url: "/2022/My Post"` will need to be slugify `url: "/2022/my-post"`
-.
+Open content > 2022 > my-post to see index.md, the `url: "/2022/My Post"` will need to be 
+slugify `url: "/2022/mm/dd/my-post"`.
 
 ### Server
 

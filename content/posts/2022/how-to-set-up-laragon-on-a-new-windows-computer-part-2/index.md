@@ -23,7 +23,7 @@ Now Laragon is installed it needs permission to run and access through the Windo
 After the restart, Laragon will automatically open, if you selected that option, otherwise press the Windows key, start
 typing **laragon**, and press Enter as soon as Laragon is the top option.
 
-![Laragon](images/2022-09-16-22-38-22-laragon-full-6-0-220916-php-8-1-10-win-32-vs-16-x-64-ts.jpg "Laragon")
+![Laragon](images/2022-09-16-22-38-22-laragon-full-6-0-220916.jpg "Laragon")
 
 ### File permissions
 
@@ -78,10 +78,10 @@ loopback address.
 
 Switch back to **Laragon**, which should have Apache and MySQL started, and press the **Web** button.
 
-![Laragon's main screen (started)](images/2022-11-08-14-31-55-laragon-full-6-0-220916-php-8-1-10-win-32-vs-16-x-64-ts.jpg "Laragon's main screen (started)")
+![Laragon (started)](images/2022-11-08-14-31-55-laragon-full-6-0-220916.jpg "Laragon (started)")
 
 Your default web browser will launch and the Laragon welcome page will display.
 
-![Laragon's welcome screen](images/2022-11-08-14-42-52-laragon.jpg "Laragon's welcome screen")
+![Laragon welcome website](images/2022-11-08-14-42-52-laragon.jpg "Laragon welcome website")
 
 That's the basics done! New projects can be created, and you are good to go! 🎉

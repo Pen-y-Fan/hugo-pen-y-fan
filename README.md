@@ -54,8 +54,7 @@ To create a new post **My post** in the **content/posts/2022** directory. Note t
 markdown file name.
 
 ```shell
-hugo new posts/2022/my-post/index.md
-hugo new posts/2022/how-to-setup-and-configure-git-for-use-with-github/index.md
+hugo new posts/2022/how-to-set-up-laragon-on-a-new-windows-computer-part-2/index.md
 ```
 
 Open content > 2022 > my-post to see index.md, the `url: "/2022/My Post"` will need to be 

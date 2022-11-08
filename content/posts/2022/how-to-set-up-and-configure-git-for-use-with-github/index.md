@@ -21,6 +21,7 @@ editor to **VS Code** and adding a global **.gitignore**.
 {{< /lead >}}
 
 ## Install git
+
 - [install git manual](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 On Windows, my local development of choice is [Laragon](https://laragon.org). Once Laragon is installed git is

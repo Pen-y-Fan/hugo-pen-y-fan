@@ -2,7 +2,7 @@
 title: "How to set up Laragon on a new Windows computer (part 2) - permissions"
 date: 2022-11-08T14:04:35Z
 draft: false
-tags: [Laragon, Resource, WAMP, permission]
+tags: [Laragon, Resource, WAMP, Permission]
 url: 2022/11/08/how-to-set-up-laragon-on-a-new-windows-computer-part-2
 summary: "Laragon needs permission to run and access through the Windows firewall"
 ---

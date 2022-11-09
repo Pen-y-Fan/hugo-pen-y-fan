@@ -1,7 +1,7 @@
 ---
 title: "How to set up Laragon on a new Windows computer (part 3) - System tray icon"
 date: 2022-11-09T11:46:37Z
-draft: true
+draft: false
 tags: [PHP, Resource, Laragon, WAMP]
 url: '2022/11/08/how-to-set-up-laragon-on-a-new-windows-computer-part-3'
 summary: "Keeping the Laragon icon visible in the system tray, when minimised is helpful. In particular, it will avoid

@@ -51,8 +51,7 @@ Basic commands
 ### Create a post
 
 To create a new post **index.md** in the **content/posts/2023/<post-name>/** directory. Note the kebab case (url
-friendly) for the
-markdown file name.
+friendly) for the markdown file name.
 
 Example:
 
@@ -62,10 +61,8 @@ hugo new posts/2023/how-to-set-up-laragon-on-a-new-windows-computer-part-5/index
 
 Open content > 2023 > <post-name> to see index.md. Update the default layout as required.
 
-#### Image
-
-The default layout has an image placeholder. Search [Unsplash](https://unsplash.com], download the photo, place it in 
-an **images** sub-folder, update the arbitration.
+The default layout has an image placeholder. Search [Unsplash](https://unsplash.com], download the photo, create 
+an **images** sub-folder, update the link and arbitration.
 
 ### Server
 

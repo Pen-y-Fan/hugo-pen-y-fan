@@ -1,7 +1,7 @@
 # Hugo for Pen-y-Fan site
 
-[Hugo](https://gohugo.io/getting-started/quick-start/) static site generator 
-for [hexo-pen-y-fan](https://github.com/Pen-y-Fan/hexo-pen-y-fan)
+[Hugo](https://gohugo.io/getting-started/quick-start/) static site generator
+for [hugo-pen-y-fan](https://github.com/Pen-y-Fan/hugo-pen-y-fan)
 
 ## Installation
 
@@ -50,15 +50,22 @@ Basic commands
 
 ### Create a post
 
-To create a new post **My post** in the **content/posts/2022** directory. Note the kebab case (url friendly) for the 
+To create a new post **index.md** in the **content/posts/2023/<post-name>/** directory. Note the kebab case (url
+friendly) for the
 markdown file name.
 
+Example:
+
 ```shell
-hugo new posts/2022/how-to-set-up-laragon-on-a-new-windows-computer-part-4/index.md
+hugo new posts/2023/how-to-set-up-laragon-on-a-new-windows-computer-part-5/index.md
 ```
 
-Open content > 2022 > my-post to see index.md, the `url: "/2022/My Post"` will need to be 
-slugify `url: "/2022/mm/dd/my-post"`.
+Open content > 2023 > <post-name> to see index.md. Update the default layout as required.
+
+#### Image
+
+The default layout has an image placeholder. Search [Unsplash](https://unsplash.com], download the photo, place it in 
+an **images** sub-folder, update the arbitration.
 
 ### Server
 
@@ -74,7 +81,7 @@ The website can be accessed from <localhost:1313>
 
 Once the new content has been checked, you are ready to deploy
 
-1. check `draft: false` is set in the front matter
+1. check **draft: false** is set in the front matter
 2. deploy the latest additions to the **public** directory:
 
 ```shell

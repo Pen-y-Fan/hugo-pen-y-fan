@@ -8,12 +8,12 @@ robots = "all"
 colorScheme = 'ocean'
 autoSwitchAppearance = 'true'
 enableCodeCopy = 'true'
-logo = 'img/logo-100x100.jpg'
 
 mainSections = "posts"
 
 [header]
 layout = "basic" # valid options: basic, hamburger, custom
+logo = 'img/logo-100x100.jpg'
 
 [footer]
 showAppearanceSwitcher = 'true'

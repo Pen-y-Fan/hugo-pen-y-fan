@@ -78,7 +78,7 @@ Once the new content has been checked, you are ready to deploy
 2. deploy the latest additions to the **public** directory:
 
 ```shell
-hugo -D
+hugo --minify
 ```
 
 The **public** folder is configured as a git submodule, open in PhpStorm, commit and push the changes 😀

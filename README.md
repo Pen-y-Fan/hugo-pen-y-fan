@@ -1,7 +1,7 @@
 # Hugo for Pen-y-Fan site
 
 [Hugo](https://gohugo.io/getting-started/quick-start/) static site generator
-for [hugo-pen-y-fan](https://github.com/Pen-y-Fan/hugo-pen-y-fan)
+for [hugo-pen-y-fan](https://github.com/Pen-y-Fan/Pen-y-Fan.github.io)
 
 ## Installation
 

@@ -1,7 +1,7 @@
 # Hugo for Pen-y-Fan site
 
 [Hugo](https://gohugo.io/getting-started/quick-start/) static site generator
-for [hugo-pen-y-fan](https://github.com/Pen-y-Fan/Pen-y-Fan.github.io)
+for [Pen-y-Fan.github.io](https://github.com/Pen-y-Fan/Pen-y-Fan.github.io)
 
 ## Installation
 
@@ -51,12 +51,12 @@ Basic commands
 ### Create a post
 
 To create a new post **index.md** in the **content/posts/2023/<post-name>/** directory. Note the kebab case (url
-friendly) for the markdown file name.
+friendly) for the directory name.
 
 Example:
 
 ```shell
-hugo new posts/2023/how-to-set-up-laragon-on-a-new-windows-computer-part-5/index.md
+hugo new posts/2023/how-to-set-up-laragon-on-a-new-windows-computer-part-6/index.md
 ```
 
 Open content > 2023 > <post-name> to see index.md. Update the default layout as required.

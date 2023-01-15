@@ -58,8 +58,8 @@ MailHog.exe : autorun MailHog.exe PWD=C:\laragon\bin\mailhog
 MailHog Admin : autorun http://mailhog:8025 
 ```
 
-Every time Laragon starts the MailHog.exe will automatically run, in the background, and the MailHog admin website will
-launch.
+Every time Laragon starts the **MailHog.exe** will automatically run, in the background, and the MailHog admin website
+will launch.
 
 ## App settings
 
@@ -93,11 +93,118 @@ Mail::send('welcome', [], fn($message) =>
 $message->to('admin@example.com')->subject('Testing MailHog'));
 ```
 
-You should see `= Illuminate\Mail\SentMessage {#4721}`
+You should see `= Illuminate\Mail\SentMessage {#4721}`, the number will be different.
 
 View the MailHog admin page in your bowser, click the inbox and the message to open it:
 
 ![MailHog inbox](images/2023-01-04_18_07_12-MailHog.jpg "MailHog inbox")
+
+## mail() settings
+
+Apps which use the PHP mail() function can be configured by editing the **php.ini**:
+
+**Laragon menu > PHP > php.ini**, by detail it will open in **Notepad++**
+
+Search (**CTRL** **F**) for **mail function**
+
+Amend as follows:
+
+```ini
+[mail function]
+; For Win32 only.
+; https://php.net/smtp
+SMTP = mailhog
+; https://php.net/smtp-port
+smtp_port = 1025
+
+; For Win32 only.
+; https://php.net/sendmail-from
+sendmail_from = laragon@example.com
+
+; For Unix only.  You may supply arguments as well (default: "sendmail -t -i").
+; https://php.net/sendmail-path
+;sendmail_path =
+
+; Force the addition of the specified parameters to be passed as extra parameters
+; to the sendmail binary. These parameters will always replace the value of
+; the 5th parameter to mail().
+;mail.force_extra_parameters =
+
+; Add X-PHP-Originating-Script: that will include uid of the script followed by the filename
+mail.add_x_header = Off
+
+sendmail_path="C:/laragon/bin/mailhog/MailHog.exe sendmail"
+```
+
+### Test mail()
+
+Open terminal (cmdr) and enter the PHP interactive shell.
+
+```shell
+php -a 
+```
+
+In the PHP interactive shell type (or paste) the following:
+
+```php
+mail('my_mail@example.com','Test', 'Test message', 'From: Laragon');
+```
+
+Open MailHog to view the message:
+
+![MailHog via mail()](images/2023-01-15_15_49_55-MailHog.jpg "MailHog via mail()")
+
+## Stop MailHog.exe
+
+Laragon will start MailHog using the Procfile, however, it will not close the running service when Laragon is exited.
+
+### Command line
+
+One of the easiest ways is from the command line:
+
+From the command line, MailHog can be verified if it's still running:
+
+```shell
+tasklist | findstr /i /c:"MailHog.exe"
+```
+
+The output will be similar to:
+
+```text
+MailHog.exe        9360 Console         1     11,188 K
+```
+
+To kill the process:
+
+```shell
+taskkill /im MailHog.exe /f
+```
+
+Which will output similar to:
+
+```text
+SUCCESS: The process "MailHog.exe" with PID 9360 has been terminated.
+```
+
+This is dependent on the process being started as an administrator, or your account, you may need elevated privileges to
+stop it.
+
+### Task manager
+
+To end the MailHog.exe process using **Task Manager**:
+
+1. open Task Manager (<kbd>Win</kbd> start typing **Task** and press <kbd>Enter</kbd> when Task Manager displays as the
+   first item)
+2. sort by process **name** by clicking the **name** heading, the cravat **^** should display 
+3. **expand all** (under **view** dropdown)
+4. look down the list for Laragon (even if Laragon is closed, it will be shown under background processes)
+5. right-click **MailHog.exe**
+6. select **End task**
+
+![Task manager](images/2023-01-08_12_48_03-Task-Manager.jpg "Task manager")
+
+Personally, MailHog takes up 0.1% of memory and very little process, so I just leave it running, even after I close
+Laragon.
 
 ## Further information
 

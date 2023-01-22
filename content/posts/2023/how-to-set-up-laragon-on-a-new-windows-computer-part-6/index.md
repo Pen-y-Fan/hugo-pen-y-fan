@@ -1,5 +1,5 @@
 ---
-title: "How to Set Up Laragon on a New Windows Computer Part 6 - Add to path"
+title: "How to set up Laragon on a new Windows computer (part 6) - Add to path"
 date: 2023-01-05T13:26:44Z
 draft: false
 tags: [PHP, Resource, PATH, Terminals]

@@ -56,7 +56,7 @@ friendly) for the directory name.
 Example:
 
 ```shell
-hugo new posts/2023/how-to-set-up-laragon-on-a-new-windows-computer-part-6/index.md
+hugo new posts/2023/how-to-update-the-php-version/index.md
 ```
 
 Open content > 2023 > <post-name> to see index.md. Update the default layout as required.

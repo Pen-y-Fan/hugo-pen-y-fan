@@ -26,7 +26,8 @@ particular functions while stepping through your code.
 > information you can for example find out how good your unit tests are.
 >
 > Xdebug's development helpers allow you to get better error messages and obtain more information from PHP's built-in
-> functions. The helpers include an upgraded var_dump() function; location, stack, and argument information upon Notices,
+> functions. The helpers include an upgraded var_dump() function; location, stack, and argument information upon
+> Notices,
 > Warnings and Exceptions; and numerous functions and settings to tweak PHP's behaviour.
 
 This is how I set up  [VS Code](https://code.visualstudio.com/) to use PHP with [Xdebug](https://xdebug.org/docs/) on
@@ -310,11 +311,11 @@ xdebug.client_port = 9004
 In Laragon, next to Apache click **Reload**. Click **web** button and **info**, as previously, scroll down to Xdebug and
 look for **xdebug.client_port**:
 
-| Directive    | Local Value |
-| :--- | :--- |
-| .... | .... |
-| xdebug.client_port | 9004 |
-| .... | .... |
+| Directive          | Local Value |
+|:-------------------|:------------|
+| ....               | ....        |
+| xdebug.client_port | 9004        |
+| ....               | ....        |
 
 Refresh the webpage created earlier and Xdebug will now work on port 9004.
 
@@ -355,11 +356,68 @@ Add Laragon to Path** log off and back on to update the path set in user profile
 
 PHP and all the other Laragon applications will then be available in all terminals and applications, including VS Code.
 
+## Known problems
+
+### Port 9003 conflicts with Nginx
+
+- [Port conflict when using xdebug with nginx #374](https://github.com/leokhoa/laragon/issues/374)
+
+Laragon configures Nginx using **laragon/etc/nginx/php_upstream.conf**, which has the conflicting post **9003** with
+xDebug.
+
+```conf
+upstream php_upstream {
+	server 127.0.0.1:9003 weight=1 max_fails=1 fail_timeout=1;
+	server 127.0.0.1:9004 weight=1 max_fails=1 fail_timeout=1;
+}
+```
+
+The workaround is to change the port used by xDebug in **php.ini**
+
+```ini
+[xdebug]
+zend_extension = xdebug-3.2.0-8.2-vs16-nts-x86_64
+xdebug.mode = coverage,debug,develop
+debug.client_port = 9000
+```
+
+Xdebug changed the default port from **9000** to **9003** a few years ago. This will conflict with Nginx using the same
+port **9003**, the work-around is to use the original post **9000**.
+
+#### netstat
+
+To check which posts are in run **netstat**:
+
+- Laragon **Start all**
+- Run **Laragon menu > Tools > netstat**
+- Notepad++ will open with the results
+- Look for port **9000** and **9003**
+
+### Xdebug can not be automatically enabled
+
+- [Xdebug can not be automatically enabled #332](https://github.com/leokhoa/laragon/issues/332)
+
+When Xdebug is downloaded and copied to the ext directory, when switching to Lagaon and try to enable in **Extensions**
+or **Quick settings**, Laragon does not automatically add the Xdebug extension.
+
+It is listed in the list of **Extensions**, when clicked the menu closes. If Apache is running it is restarted. However,
+the extension isn't added to php.ini.
+
+The workaround is to manually add the extension to **php.ini**:
+
+```ini
+[xdebug]
+zend_extension = xdebug-3.2.0-8.2-vs16-nts-x86_64
+xdebug.mode = coverage,debug,develop
+```
+
+Laragon will happily toggle the Xdebug extension on and off via **Extensions** or **Quick settings**.
+
 ## Further information
 
 - [Xdebug 3 — Documentation](https://xdebug.org/docs/) - full documentation for Xdebug 3
-- [Youtube Xdebug 3 Documentation](https://www.youtube.com/playlist?list=PLg9Kjjye-m1g_eXpdaifUqLqALLqZqKd4) - by Derick
+- [YouTube Xdebug 3 Documentation](https://www.youtube.com/playlist?list=PLg9Kjjye-m1g_eXpdaifUqLqALLqZqKd4) - by Derick
   Rethans - A series of videos to explain how Xdebug 3 and all of its features work.
 - [Debugging in VS Code](https://code.visualstudio.com/docs/editor/debugging) - official VS Code documentation.
-- [Laragon's forum](https://forum.laragon.org/) - useful forum for anything Laragon related, you may see some answers
-  from me too 😃
+- [Laragon's discussions](https://github.com/leokhoa/laragon/discussions) - useful GitHub discussions for anything
+  Laragon related,  you may see some answers from me too 😃

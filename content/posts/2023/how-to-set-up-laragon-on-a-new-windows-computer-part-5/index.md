@@ -18,6 +18,13 @@ Laragon ships with Mail Catcher, which intercepts mail sent using the PHP mail()
 and acts as a local mailbox. No mail will ever leave the local PC!
 {{< /lead >}}
 
+{{< alert >}}
+Laravel 10's `.env.example` will use **Mailpit** as the default local mail provider. Mailpit is inspired by MailHog, it
+has the same API. The author of Mailpit has completely rewritten Mailpit to be faster and better supported. Mailpit is
+available as a free download from GitHub. Form information on how to install mailpit
+see [How to install mailpit on Windows and integrate with Laragon](https://pen-y-fan.github.io/2023/02/23/how-to-install-mailpit-in-laragon/).
+{{< /alert >}}
+
 ## Download MailHog
 
 Download MailHog from [releases](https://github.com/mailhog/MailHog/releases), the file for Windows
@@ -133,7 +140,7 @@ sendmail_from = laragon@example.com
 ; Add X-PHP-Originating-Script: that will include uid of the script followed by the filename
 mail.add_x_header = Off
 
-sendmail_path="C:/laragon/bin/mailhog/MailHog.exe sendmail"
+sendmail_path = "C:/laragon/bin/mailhog/MailHog.exe sendmail"
 ```
 
 ### Test mail()
@@ -195,7 +202,7 @@ To end the MailHog.exe process using **Task Manager**:
 
 1. open Task Manager (<kbd>Win</kbd> start typing **Task** and press <kbd>Enter</kbd> when Task Manager displays as the
    first item)
-2. sort by process **name** by clicking the **name** heading, the cravat **^** should display 
+2. sort by process **name** by clicking the **name** heading, the cravat **^** should display
 3. **expand all** (under **view** dropdown)
 4. look down the list for Laragon (even if Laragon is closed, it will be shown under background processes)
 5. right-click **MailHog.exe**
